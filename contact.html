@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Cafe | კონტაქტი</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Aroma<span class="accent-text">Cafe.</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="menu.html">მენიუ</a></li>
+                <li><a href="contact.html" class="active">კონტაქტი</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="btn-icon" aria-label="თემის შეცვლა">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg id="sun-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+            <div class="burger-menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-page container animate-on-scroll">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>გვეწვიეთ ადგილზე</h2>
+                <p>ჩვენი კარი ყოველთვის ღიაა ყავის მოყვარულთათვის.</p>
+                <div class="info-block">
+                    <strong>მისამართი:</strong>
+                    <span>თბილისი, რუსთაველის გამზ. 12</span>
+                </div>
+                <div class="info-block">
+                    <strong>სამუშაო საათები:</strong>
+                    <span>ორშ - კვი / 08:00 - 22:00</span>
+                </div>
+            </div>
+
+            <div class="form-wrapper">
+                <h3>მაგიდის დაჯავშნა</h3>
+                
+                <form id="booking-form" novalidate>
+                    <div class="input-container">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name" class="floating-label">თქვენი სახელი</label>
+                        <span class="error-msg" id="err-name"></span>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="tel" id="phone" placeholder=" " required>
+                        <label for="phone" class="floating-label">ტელეფონის ნომერი</label>
+                        <span class="error-msg" id="err-phone"></span>
+                    </div>
+
+                    <div class="input-container custom-select">
+                        <select id="guests">
+                            <option value="1">1 პერსონა</option>
+                            <option value="2" selected>2 პერსონა</option>
+                            <option value="3">3-4 პერსონა</option>
+                            <option value="5">5+ პერსონა</option>
+                        </select>
+                        <span class="select-arrow">▼</span>
+                    </div>
+
+                    <button type="submit" class="btn-primary w-100">დაჯავშნის მოთხოვნა</button>
+                    
+                    <div id="success-msg" class="alert-success hidden">
+                        ✓ ჯავშანი წარმატებით გაიგზავნა! მალე დაგიკავშირდებით.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-logo">Aroma<span>Cafe.</span></div>
+            <p>&copy; 2026 Aroma Cafe. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
